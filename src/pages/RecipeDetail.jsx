@@ -10,7 +10,7 @@ const RecipeDetail = () => {
     loading,
     error,
   } = useFetch(
-    `http://localhost:3000/dish/id/${id}`,
+    `https://recipe-app-backend-gamma.vercel.app/dish/id/${id}`,
     null,
   );
 

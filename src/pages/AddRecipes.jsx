@@ -23,7 +23,7 @@ const AddRecipes = () => {
     console.log("Submitting form with data:", formData); 
     try {
       const response = await fetch(
-        "http://localhost:3000/dish",
+        "https://recipe-app-backend-gamma.vercel.app/dish",
         {
           method: "POST",
           headers: {

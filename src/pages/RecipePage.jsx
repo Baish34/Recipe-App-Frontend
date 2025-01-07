@@ -5,7 +5,7 @@ import useFetch from "../hooks/useFetch";
 
 const RecipePage = () => {
   const { data: recipes, loading, error } = useFetch(
-    "http://localhost:3000/dish",
+    "https://recipe-app-backend-gamma.vercel.app/dish",
     []
   );
   const [searchQuery, setSearchQuery] = useState("");
@@ -14,7 +14,7 @@ const RecipePage = () => {
   const handleDelete = async (dishId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/dish/${dishId}`,
+        `https://recipe-app-backend-gamma.vercel.app/dish/${dishId}`,
         { method: "DELETE" }
       );
 
