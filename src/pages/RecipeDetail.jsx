@@ -10,7 +10,7 @@ const RecipeDetail = () => {
     loading,
     error,
   } = useFetch(
-    `https://c8e4eaa8-3e45-45e0-8524-3f4d73e6e408-00-35718akvqu32e.worf.replit.dev/dish/id/${id}`,
+    `http://localhost:3000/dish/id/${id}`,
     null,
   );
 

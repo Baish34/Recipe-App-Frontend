@@ -5,7 +5,7 @@ import useFetch from "../hooks/useFetch";
 
 const RecipePage = () => {
   const { data: recipes, loading, error } = useFetch(
-    "https://c8e4eaa8-3e45-45e0-8524-3f4d73e6e408-00-35718akvqu32e.worf.replit.dev/dish",
+    "http://localhost:3000/dish",
     []
   );
   const [searchQuery, setSearchQuery] = useState("");
@@ -14,7 +14,7 @@ const RecipePage = () => {
   const handleDelete = async (dishId) => {
     try {
       const response = await fetch(
-        `https://c8e4eaa8-3e45-45e0-8524-3f4d73e6e408-00-35718akvqu32e.worf.replit.dev/dish/${dishId}`,
+        `http://localhost:3000/dish/${dishId}`,
         { method: "DELETE" }
       );
 
